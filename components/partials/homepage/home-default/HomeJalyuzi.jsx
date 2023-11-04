@@ -28,7 +28,7 @@ const HomeJalyuzi = () => {
                                 <div
                                     className='parent_item'
                                     style={{
-                                        backgroundImage: `url(${item.image})`,
+                                        backgroundImage: `url(${item?.image})`,
                                         backgroundRepeat: 'no-repeat',
                                         width: '100%',
                                         backgroundSize: 'cover',
