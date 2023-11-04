@@ -57,13 +57,14 @@ const ProductCategoryScreen = () => {
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div
                     className="ps-container"
-                    style={{
-                        backgroundImage: `url(/static/fon/photo_2023-11-02_11-23-37.jpg)`,
-                        backgroundRepeat: 'no-repeat',
-                        width: '100%',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                    }}>
+                    // style={{
+                    //     backgroundImage: `url(/static/fon/photo_2023-11-02_11-23-37.jpg)`,
+                    //     backgroundRepeat: 'no-repeat',
+                    //     width: '100%',
+                    //     backgroundSize: 'cover',
+                    //     backgroundPosition: 'center',
+                    // }}
+                    >
                     <Link href="/jalyuzi">
                         <a>
                             <div className="seaction_name"> pardalar </div>

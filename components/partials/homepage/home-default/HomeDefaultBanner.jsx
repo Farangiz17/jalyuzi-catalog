@@ -1,41 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import Slider from 'react-slick';
 import NextArrow from '~/components/elements/carousel/NextArrow';
 import PrevArrow from '~/components/elements/carousel/PrevArrow';
 import Link from 'next/link';
-import MediaRepository from '~/repositories/MediaRepository';
-import { baseUrl } from '~/repositories/Repository';
-import { getItemBySlug } from '~/utilities/product-helper';
-import Promotion from '~/components/elements/media/Promotion';
 
 const HomeDefaultBanner = () => {
     const [bannerItems, setBannerItems] = useState(null);
-    const [promotion1, setPromotion1] = useState(null);
-    const [promotion2, setPromotion2] = useState(null);
 
-    async function getBannerItems() {
-        const responseData = await MediaRepository.getBannersBySlug(
-            'banner-home-fullwidth'
-        );
-        if (responseData) {
-            setBannerItems(responseData);
-        }
-    }
-
-    async function getPromotions() {
-        const responseData = await MediaRepository.getPromotionsBySlug(
-            'home_fullwidth_promotions'
-        );
-        if (responseData) {
-            setPromotion1(getItemBySlug(responseData, 'main_1'));
-            setPromotion2(getItemBySlug(responseData, 'main_2'));
-        }
-    }
-
-    useEffect(() => {
-        getBannerItems();
-        getPromotions();
-    }, []);
 
     const carouselSetting = {
         dots: false,
@@ -57,7 +28,8 @@ const HomeDefaultBanner = () => {
                     <a
                         className="ps-banner-item--default bg--cover"
                         style={{
-                            backgroundImage: `url(/static/pardalar/IMG_3523.JPG)`,
+                            position:'relative',
+                            backgroundImage: `url(/static/fon/Untitled (1).png)`
                         }}
                     />
                 </Link>
@@ -71,15 +43,14 @@ const HomeDefaultBanner = () => {
     }
     return (
         <div className="ps-home-banner ps-home-banner--1">
-            {/* <div className="ps-container"> */}
                 <div
                     className="bannerr d-flex text-center justify-content-center align-items-center"
                     style={{
-                        backgroundImage: `url(/static/pardalar/IMG_3523.JPG)`,
+                        backgroundImage: `url(/static/fon/Untitled.png)`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         width: '100%',
-                        height: '500px',
+                        height: '570px',
                     }}>
                         <div className='ps-container'>
 

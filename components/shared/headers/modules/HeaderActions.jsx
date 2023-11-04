@@ -15,11 +15,7 @@ const HeaderActions = ({ ecomerce, auth }) => {
     }
     return (
         <div className="header__actions">
-            <Link href="/">
-                <a className="header__extra">
-                    Biz haqimizda
-                </a>
-            </Link>
+           
             <Link href="/jalyuzi">
                 <a className="header__extra">
                    Jalyuzi
@@ -29,6 +25,11 @@ const HeaderActions = ({ ecomerce, auth }) => {
                 <a className="header__extra">
                   
                     Pardalar
+                </a>
+            </Link>
+            <Link href="#about">
+                <a className="header__extra">
+                    Biz haqimizda
                 </a>
             </Link>
             <Link href="tel: +998 99 659 99 90">

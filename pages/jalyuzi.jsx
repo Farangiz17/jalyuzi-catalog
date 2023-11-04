@@ -57,13 +57,14 @@ const ProductCategoryScreen = () => {
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div
                     className="ps-container"
-                    style={{
-                        backgroundImage: `url(/static/fon/photo_2023-11-02_11-23-59.jpg)`,
-                        backgroundRepeat: 'no-repeat',
-                        width: '100%',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                    }}>
+                    // style={{
+                    //     backgroundImage: `url(/static/fon/photo_2023-11-02_11-23-59.jpg)`,
+                    //     backgroundRepeat: 'no-repeat',
+                    //     width: '100%',
+                    //     backgroundSize: 'cover',
+                    //     backgroundPosition: 'center',
+                    // }}
+                    >
                     <Link href="/jalyuzi">
                         <a>
                             <div className="seaction_name"> Jalyuzilar </div>
@@ -82,7 +83,8 @@ const ProductCategoryScreen = () => {
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'center',
                                             height: '220px',
-                                        }}>
+                                        }}
+                                        >
                                         <Link href={`/jalyuzi/${item.id}`}>
                                             <a className="ps-block__overlay"></a>
                                         </Link>

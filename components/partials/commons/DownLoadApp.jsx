@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DownloadApp = () => (
-    <section className="ps-download-app ">
+    <section id='about' className="ps-download-app ">
         <div className="ps-container">
             <div className="ps-block--download-app pb-5 ">
                 <div className="container ">

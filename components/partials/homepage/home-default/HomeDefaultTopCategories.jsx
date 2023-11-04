@@ -8,13 +8,7 @@ const HomeDefaultTopCategories = () => {
         <div className="ps-top-categories ">
             <div
                 className="ps-container"
-                style={{
-                    backgroundImage: `url(/static/fon/photo_2023-11-02_11-23-37.jpg)`,
-                    backgroundRepeat: 'no-repeat',
-                    width: '100%',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}>
+                >
                <div className='container' >
                <Link href="/parda">
                     <a>
